@@ -7,6 +7,9 @@ type ReturnType = [
 ]
 
 /**
+ * 
+ * @param defaultValue 
+ * @returns {[boolean,(value?:boolean) => void]}
  * @description
  * Toggles between true or false
  * @example
