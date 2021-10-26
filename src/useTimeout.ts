@@ -1,10 +1,5 @@
 import { useCallback, useEffect, useRef } from "react"
 
-type ReturnType = {
-    reset: () => void,
-    clear: () => void
-}
-
 /**
  * 
  * @param callback 
@@ -18,7 +13,7 @@ type ReturnType = {
  * reset()
  * clear()
  */
-export default function useTimeout<CallbackType extends () => void>(callback: CallbackType, delay: number): ReturnType {
+export default function useTimeout<CallbackType extends () => void>(callback: CallbackType, delay: number) {
     const callbackRef = useRef<CallbackType>(callback)
     const timeoutRef = useRef<typeof delay>()
 

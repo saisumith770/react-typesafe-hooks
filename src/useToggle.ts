@@ -1,10 +1,6 @@
 import { useState } from "react"
 
 type ToggleValues = boolean
-type ReturnType = [
-    ToggleValues,
-    (value?: ToggleValues) => void
-]
 
 /**
  * 
@@ -17,7 +13,10 @@ type ReturnType = [
  * console.log(value)
  * toggler() //optional parameter => toggler(false)
  */
-export default function useToggle(defaultValue: ToggleValues = false): ReturnType {
+export default function useToggle(defaultValue: ToggleValues = false): [
+    ToggleValues,
+    (value?: ToggleValues) => void
+] {
     const [value, setValue] = useState(defaultValue)
 
     function toggleValue(value?: ToggleValues): void {
