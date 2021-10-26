@@ -9,7 +9,7 @@ type ReturnType = [
 /**
  * 
  * @param defaultValue 
- * @returns {[boolean,(value?:boolean) => void]}
+ * @returns ToggleGetterSetterArray
  * @description
  * Toggles between true or false
  * @example
