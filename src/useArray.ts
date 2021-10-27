@@ -4,6 +4,7 @@ type TypedFlatten<T> = T extends Array<infer U> ? U : T
 
 /**
  * @param defaultValue
+ * @returns ArrayStateControls
  * @description 
  * Hook that takes an array and returns stateful data with mutation functions.
  * @example

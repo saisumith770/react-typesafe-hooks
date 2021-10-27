@@ -5,6 +5,7 @@ type RefToPreviousValue = any
 
 /**
  * @param value
+ * @returns PreviousStateValue
  * @description
  * Hook to show the previous value of a stateful object.
  * @example

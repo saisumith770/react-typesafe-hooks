@@ -5,6 +5,7 @@ type StatefulValue = any
 /**
  * @param defaultValue
  * @param capacity
+ * @returns StateHistoryControls
  * @description
  * State function that works like useState but caches the previous values of the state and allows you to toggle the state value between 
  * the previous values.
