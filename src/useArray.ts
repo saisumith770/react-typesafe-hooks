@@ -2,6 +2,20 @@ import { useState } from "react"
 
 type TypedFlatten<T> = T extends Array<infer U> ? U : T
 
+/**
+ * @param defaultValue
+ * @description 
+ * Hook that takes an array and returns stateful data with mutation functions.
+ * @example
+ * const {array, set, push, filter, update, remove, clear} = useArray([1,2,3])
+ * console.log(array)
+ * set(() => [])
+ * push(1)
+ * filter(FilterFunc)
+ * update(0,2)
+ * remove(0)
+ * clear()
+ */
 export default function useArray<ArrayType extends any[]>(defaultValue: ArrayType) {
     const [array, setArray] = useState<ArrayType>(defaultValue)
 
