@@ -9,6 +9,15 @@ type StatefulValue = any
  * @description
  * State function that works like useState but caches the previous values of the state and allows you to toggle the state value between 
  * the previous values.
+ * @example
+ * const [count, setCount, { history, pointer, back, forward, go }] = useStateWithHistory(1)
+ * console.log(count)
+ * setCount((prev) => prev + 1)
+ * console.log(history)
+ * console.log(pointer)
+ * back()
+ * forward()
+ * go(1)
  */
 export function useStateWithHistory(
     defaultValue: any,
