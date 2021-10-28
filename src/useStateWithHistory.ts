@@ -10,7 +10,7 @@ type StatefulValue = any
  * State function that works like useState but caches the previous values of the state and allows you to toggle the state value between 
  * the previous values.
  */
-export default function useStateWithHistory(
+export function useStateWithHistory(
     defaultValue: any,
     capacity: number = 10
 ): [

@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react"
 type ErrorData = any
 type ReturnData = any
 
-export default function useAsync(callback: () => Promise<() => void>, dependencies: any[] = []) {
+export function useAsync(callback: () => Promise<() => void>, dependencies: any[] = []) {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState<ErrorData>()
     const [value, setValue] = useState<ReturnData>()

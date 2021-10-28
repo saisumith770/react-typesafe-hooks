@@ -17,7 +17,7 @@ type TypedFlatten<T> = T extends Array<infer U> ? U : T
  * remove(0)
  * clear()
  */
-export default function useArray<ArrayType extends any[]>(defaultValue: ArrayType) {
+export function useArray<ArrayType extends any[]>(defaultValue: ArrayType) {
     const [array, setArray] = useState<ArrayType>(defaultValue)
 
     function push(element: TypedFlatten<ArrayType>) {

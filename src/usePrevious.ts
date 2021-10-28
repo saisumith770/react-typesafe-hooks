@@ -13,7 +13,7 @@ type RefToPreviousValue = any
  * const prevVal = usePrevious(count)
  * console.log(prevVal)
  */
-export default function usePrevious(value: StatefulValue): RefToPreviousValue {
+export function usePrevious(value: StatefulValue): RefToPreviousValue {
     const currentRef = useRef<StatefulValue>(value)
     const previousRef = useRef<StatefulValue>()
 

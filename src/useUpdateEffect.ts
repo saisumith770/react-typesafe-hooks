@@ -10,7 +10,7 @@ import { useEffect, useRef } from "react"
  * const [count,setCount] = useState(0)
  * useUpdateEffect(() => console.log("update worked"),[count])
  */
-export default function useUpdateEffect<CallbackType extends () => void>(callback: CallbackType, dependencies: any[]) {
+export function useUpdateEffect<CallbackType extends () => void>(callback: CallbackType, dependencies: any[]) {
     const firstRenderRef = useRef<boolean>(true)
 
     useEffect(() => {

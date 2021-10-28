@@ -13,7 +13,7 @@ type ToggleValues = boolean
  * console.log(value)
  * toggler() //optional parameter => toggler(false)
  */
-export default function useToggle(defaultValue: ToggleValues = false): [
+export function useToggle(defaultValue: ToggleValues = false): [
     ToggleValues,
     (value?: ToggleValues) => void
 ] {
