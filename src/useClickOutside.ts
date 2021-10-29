@@ -14,7 +14,7 @@ import useEventListener from "./useEventListener"
     if (open) setOpen(false)
   })
  */
-export default function useClickOutside(ref: React.MutableRefObject<any>, cb: (e: any) => void) {
+export function useClickOutside(ref: React.MutableRefObject<any>, cb: (e: any) => void) {
   useEventListener("click", (e) => {
     if (ref.current == null || ref.current.contains(e.target)) return
     cb(e)

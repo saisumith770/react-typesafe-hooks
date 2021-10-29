@@ -7,12 +7,27 @@ The package can be installed via npm by executing:<br>
 ## Hooks
 - [x] useArray
 - [x] useAsync
+- [x] useClickOutside
+- [x] useCookie
+- [x] useCopyToClipboard
+- [x] useDarkMode
 - [x] useDebounce
+- [x] useDebugInformation
 - [x] useDeepCompareEffect
+- [x] useEventListener
 - [x] useFetch
+- [ ] useGeolocation
+- [ ] useHover
+- [ ] useLongPress
+- [ ] useMediaQuery
+- [ ] useOnlineStatus
+- [ ] useOnScreen
 - [x] usePrevious
+- [ ] useSize
 - [x] useStateWithHistory
+- [ ] useStateWithValidation
 - [x] useStorage
 - [x] useTimeout
 - [x] useToggle
 - [x] useUpdateEffect
+- [ ] useWindowSize

@@ -11,7 +11,7 @@ import Cookies from "js-cookie"
  * @example
  * const [value, update, remove] = useCookie("name", "John")
  */
-export default function useCookie(name: string, defaultValue: string | object): [
+export function useCookie(name: string, defaultValue: string | object): [
   value: string | object | null,
   updateCookie: (newValue: any, options: any) => void,
   deleteCookie: () => void

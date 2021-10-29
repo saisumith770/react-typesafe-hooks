@@ -1,7 +1,5 @@
 import React, { useCallback, useState, useEffect } from "react"
 
-type StatefulValue = any
-
 /**
  * 
  * @param key 
@@ -15,7 +13,7 @@ type StatefulValue = any
  * setAge(12)
  * removeAge()
  */
-export function useLocalStorage(key: string, defaultValue?: any) {
+export function useLocalStorage<DefaultValueType = any>(key: string, defaultValue?: DefaultValueType) {
     return useStorage(key, defaultValue, window.localStorage)
 }
 
@@ -32,13 +30,13 @@ export function useLocalStorage(key: string, defaultValue?: any) {
  * setName('Sai Sumith')
  * removeName()
  */
-export function useSessionStorage(key: string, defaultValue?: any) {
+export function useSessionStorage<DefaultValueType = any>(key: string, defaultValue?: DefaultValueType) {
     return useStorage(key, defaultValue, window.sessionStorage)
 }
 
-function useStorage(key: string, defaultValue: any, storageObject: Storage): [
-    value: StatefulValue,
-    setValue: React.Dispatch<React.SetStateAction<StatefulValue>>,
+function useStorage<DefaultValueType = any>(key: string, defaultValue: DefaultValueType, storageObject: Storage): [
+    value: DefaultValueType,
+    setValue: React.Dispatch<React.SetStateAction<DefaultValueType>>,
     remove: () => void
 ] {
     const [value, setValue] = useState(() => {

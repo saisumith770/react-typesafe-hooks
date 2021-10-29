@@ -9,7 +9,7 @@ import { useState } from "react"
  * const [copyToClipboard, { success }] = useCopyToClipboard()
  * copyToClipboard("This was copied")
  */
-export default function useCopyToClipboard(): [
+export function useCopyToClipboard(): [
   copyToClipboard: (text: string) => Promise<void>,
   operators: {
     value: string | undefined,

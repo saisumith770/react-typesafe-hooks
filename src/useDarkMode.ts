@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import useMediaQuery from "./useMediaQuery"
 import { useLocalStorage } from "./useStorage"
 
-export default function useDarkMode(): [
+export function useDarkMode(): [
   enabled: boolean,
   setDarkMode: React.Dispatch<React.SetStateAction<boolean | undefined>>
 ] {
