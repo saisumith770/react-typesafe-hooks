@@ -15,7 +15,7 @@ type StatefulValue = any
  * setAge(12)
  * removeAge()
  */
-export function useLocalStorage(key: string, defaultValue: any) {
+export function useLocalStorage(key: string, defaultValue?: any) {
     return useStorage(key, defaultValue, window.localStorage)
 }
 
@@ -32,7 +32,7 @@ export function useLocalStorage(key: string, defaultValue: any) {
  * setName('Sai Sumith')
  * removeName()
  */
-export function useSessionStorage(key: string, defaultValue: any) {
+export function useSessionStorage(key: string, defaultValue?: any) {
     return useStorage(key, defaultValue, window.sessionStorage)
 }
 
