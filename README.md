@@ -4,6 +4,12 @@ The package can be installed via npm by executing:<br>
 
     npm i react-typesafe-hooks
 
+## Builds
+I see that the `.map` files are not useful in production builds so if you wanted to compress the folder, we would suggest adding the following commands to your production script in npm.<br>
+**windows**
+
+    npm explore react-typesafe-hooks -- npm run windows-build
+
 ## Hooks
 - [x] useArray
 - [x] useAsync

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-
+import ResizeObserver from 'resize-observer-polyfill'
 /**
  * 
  * @param ref 
