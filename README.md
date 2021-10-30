@@ -16,18 +16,19 @@ The package can be installed via npm by executing:<br>
 - [x] useDeepCompareEffect
 - [x] useEventListener
 - [x] useFetch
-- [ ] useGeolocation
-- [ ] useHover
-- [ ] useLongPress
-- [ ] useMediaQuery
-- [ ] useOnlineStatus
-- [ ] useOnScreen
+- [x] useGeolocation
+- [x] useHover
+- [x] useLongPress
+- [x] useMediaQuery
+- [x] useOnlineStatus
+- [x] useOnScreen
 - [x] usePrevious
-- [ ] useSize
+- [x] useRenderCount
+- [x] useSize
 - [x] useStateWithHistory
-- [ ] useStateWithValidation
+- [x] useStateWithValidation
 - [x] useStorage
 - [x] useTimeout
 - [x] useToggle
 - [x] useUpdateEffect
-- [ ] useWindowSize
+- [x] useWindowSize

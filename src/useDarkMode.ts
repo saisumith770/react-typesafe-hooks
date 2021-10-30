@@ -1,7 +1,17 @@
 import { useEffect } from "react"
-import useMediaQuery from "./useMediaQuery"
+import { useMediaQuery } from "./useMediaQuery"
 import { useLocalStorage } from "./useStorage"
 
+/**
+ * 
+ * @returns DarkModeStatus
+ * @description
+ * Hook that sets and gets Dark mode details from local storage
+ * @example
+ * const [darkMode, setDarkMode] = useDarkMode()
+ * console.log(darkMode)
+ * setDarkMode(true)
+ */
 export function useDarkMode(): [
   enabled: boolean,
   setDarkMode: React.Dispatch<React.SetStateAction<boolean | undefined>>

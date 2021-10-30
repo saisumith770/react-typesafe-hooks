@@ -1,5 +1,5 @@
 import { useState } from "react"
-import useEventListener from "./useEventListener"
+import { useEventListener } from "./useEventListener"
 
 /**
  * 
@@ -10,7 +10,7 @@ import useEventListener from "./useEventListener"
  * const online = useOnlineStatus()
  * console.log(online)
  */
-export default function useOnlineStatus() {
+export function useOnlineStatus() {
   const [online, setOnline] = useState(navigator.onLine)
 
   useEventListener("online", () => setOnline(navigator.onLine))

@@ -9,7 +9,7 @@ import { useEffect, useRef } from "react"
  * const renderCount = useRenderCount()
  * console.log(renderCount)
  */
-export default function useRenderCount() {
+export function useRenderCount() {
   const count = useRef(1)
   useEffect(() => { count.current++ })
   return count.current

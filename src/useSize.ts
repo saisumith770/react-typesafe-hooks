@@ -11,7 +11,7 @@ import React, { useState, useEffect } from "react"
   const size = useSize(ref)
   console.log(size)
  */
-export default function useSize(ref: React.MutableRefObject<any>) {
+export function useSize(ref: React.MutableRefObject<any>) {
     const [size, setSize] = useState<Record<string, any>>({})
 
     useEffect(() => {

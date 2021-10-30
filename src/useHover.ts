@@ -1,5 +1,5 @@
 import { useState } from "react"
-import useEventListener from "./useEventListener"
+import { useEventListener } from "./useEventListener"
 
 /**
  * 
@@ -12,7 +12,7 @@ import useEventListener from "./useEventListener"
   const hovered = useHover(elementRef)
   console.log(hovered)
  */
-export default function useHover(ref: React.MutableRefObject<any>) {
+export function useHover(ref: React.MutableRefObject<any>) {
   const [hovered, setHovered] = useState(false)
 
   useEventListener("mouseover", () => setHovered(true), ref.current)

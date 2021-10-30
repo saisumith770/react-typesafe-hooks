@@ -13,7 +13,7 @@ import { useState, useEffect } from "react"
   } = useGeolocation()
   console.log(latitude, longitude)
  */
-export default function useGeolocation(options?: PositionOptions) {
+export function useGeolocation(options?: PositionOptions) {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState<any>()
     const [data, setData] = useState<Partial<GeolocationCoordinates>>({})

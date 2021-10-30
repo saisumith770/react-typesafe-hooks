@@ -15,7 +15,7 @@ type EventCallback = (this: Window, ev: any) => any
     setKey(e.key)
   })
  */
-export default function useEventListener(
+export function useEventListener(
     eventType: string,
     callback: EventCallback,
     element: Window | Document = window

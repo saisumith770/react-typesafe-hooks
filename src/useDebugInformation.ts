@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react"
-import useRenderCount from "./useRenderCount"
+import { useRenderCount } from "./useRenderCount"
 
 /**
  * @param componentName
@@ -26,7 +26,7 @@ function ChildComponent(props) {
   return (<!--Component-->)
 }
  */
-export default function useDebugInformation(componentName: string, props: Record<string, any>) {
+export function useDebugInformation(componentName: string, props: Record<string, any>) {
   const count = useRenderCount()
   const changedProps = useRef<typeof props>({})
   const previousProps = useRef(props)

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import useEventListener from "./useEventListener"
+import { useEventListener } from "./useEventListener"
 
 /**
  * 
@@ -11,7 +11,7 @@ import useEventListener from "./useEventListener"
  * const isLarge = useMediaQuery("(min-width: 200px)")
  * console.log(isLarge)
  */
-export default function useMediaQuery(mediaQuery: string) {
+export function useMediaQuery(mediaQuery: string) {
     const [isMatch, setIsMatch] = useState(false)
     const [mediaQueryList, setMediaQueryList] = useState<MediaQueryList>()
 

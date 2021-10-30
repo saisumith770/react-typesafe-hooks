@@ -1,5 +1,5 @@
 import React from "react"
-import useEventListener from "./useEventListener"
+import { useEventListener } from "./useEventListener"
 
 /**
  * @param ref 

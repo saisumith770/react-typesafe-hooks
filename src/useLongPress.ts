@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import useEventListener from "./useEventListener"
+import { useEventListener } from "./useEventListener"
 import { useTimeout } from "./useTimeout"
 
 /**
@@ -14,7 +14,7 @@ import { useTimeout } from "./useTimeout"
  * const elementRef = useRef()
   useLongPress(elementRef, () => alert("Long Press"))
  */
-export default function useLongPress(ref: React.MutableRefObject<any>, cb: () => void, { delay = 250 } = {}) {
+export function useLongPress(ref: React.MutableRefObject<any>, cb: () => void, { delay = 250 } = {}) {
   const { reset, clear } = useTimeout(cb, delay)
   useEffect(clear, [])
 

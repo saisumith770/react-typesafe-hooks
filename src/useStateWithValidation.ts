@@ -12,7 +12,7 @@ import { useState, useCallback } from "react"
     ""
   )
  */
-export default function useStateWithValidation<ValidationFuncType extends (state: any) => boolean>(
+export function useStateWithValidation<ValidationFuncType extends (state: any) => boolean>(
     validationFunc: ValidationFuncType,
     initialValue: any
 ): [
