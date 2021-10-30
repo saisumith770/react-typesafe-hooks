@@ -10,6 +10,14 @@ I see that the `.map` files are not useful in production builds so if you wanted
 
     npm explore react-typesafe-hooks -- npm run windows-build
 
+**mac**
+
+    npm explore react-typesafe-hooks -- npm run mac-build
+
+**linux**
+
+    npm explore react-typesafe-hooks -- npm run linux-build
+
 ## Hooks
 - [x] useArray
 - [x] useAsync

@@ -1,12 +1,14 @@
 {
   "name": "react-typesafe-hooks",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "react hooks that are type safe, built completely in typescript. These are regular usage hooks and more will be added in later versions of the project.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "node dist/index.js",
-    "windows-build": "cd dist && Del \"*.map\""
+    "windows-build": "cd dist && Del \"*.map\"",
+    "mac-build": "cd dist && find /path . -name '*.map' -type f -delete",
+    "linux-build": "cd dist && rm *.map"
   },
   "keywords": [
     "react",
