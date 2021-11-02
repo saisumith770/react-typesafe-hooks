@@ -21,6 +21,8 @@ I see that the `.map` files are not useful in production builds so if you wanted
 ## Hooks
 - [x] useArray
 - [x] useAsync
+- [x] useAudio
+- [ ] useBattery
 - [x] useClickOutside
 - [x] useCookie
 - [x] useCopyToClipboard
@@ -34,15 +36,22 @@ I see that the `.map` files are not useful in production builds so if you wanted
 - [x] useHover
 - [x] useLongPress
 - [x] useMediaQuery
+- [x] useMergeState
 - [x] useOnlineStatus
 - [x] useOnScreen
+- [ ] usePermission
 - [x] usePrevious
 - [x] useRenderCount
+- [ ] useScroll
+- [x] useSearchFilter
 - [x] useSize
+- [ ] useStartTyping
 - [x] useStateWithHistory
 - [x] useStateWithValidation
 - [x] useStorage
 - [x] useTimeout
 - [x] useToggle
 - [x] useUpdateEffect
+- [x] useVibrate
+- [x] useVideo
 - [x] useWindowSize
