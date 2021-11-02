@@ -19,12 +19,13 @@ const isVibrationApiSupported = isNavigator && 'vibrate' in navigator;
   useVibrate(vibrating, [300, 100, 200, 100, 1000, 300], false);
   toggleVibrating()
  */
-function useVibrate(
+export async function useVibrate(
     enabled: boolean = true,
     pattern: VibrationPattern = [1000, 1000],
     loop: boolean = true
-): void {
-    useEffect(() => {
+): Promise<void> {
+    if (!isVibrationApiSupported) throw new Error("vibration api is not supported on this operating system")
+    else useEffect(() => {
         let interval: number;
 
         if (enabled) {
@@ -46,5 +47,3 @@ function useVibrate(
         }
     }, [enabled]);
 }
-
-export default isVibrationApiSupported ? useVibrate : noop;
